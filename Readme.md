@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Денис Кривошапко](https://up.htmlacademy.ru/htmlcss/23/user/789161).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
 
 ---
 
