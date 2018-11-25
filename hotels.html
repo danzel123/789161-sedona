@@ -16,12 +16,70 @@
       <div class="logo"><a href="index.html"><img src="img/logo-sedona.svg" alt="Герб Седоны" width="140" height="72"></a></div>
   </nav>
 </header>
-
 <body>
     <main class="container">
         <section class="filter-form">
-            <!--Здесь форма-->
+           <form method="post">
+               <fieldset>
+                <legend>Инфраструктура:</legend>
+                <ul>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+                         <label for="filter-pool">Бассейн</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking" >
+                         <label for="filter-parking">Парковка</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi" >
+                         <label for="filter-wi-fi">WI-FI</label>
+                    </li>
+                </ul>   
+               </fieldset>
+               <fieldset>
+               <legend>Тип жилья:</legend>
+                <ul>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+                         <label for="filter-hotel">Гостиница</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+                         <label for="filter-motel">Мотель</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name=appartments" id="filter-appartments" checked>
+                         <label for="filter-appartments">Аппартаменты</label>
+                    </li>
+                </ul>   
+               </fieldset>
+               <fieldset>
+                   <legend>Стоимость в сутки(Р):</legend>
+                   <ul>
+                   <!-- 2 прямоугольника с ценовым диапазоном. Пока что не понимаю, как их сделать -->
+                   <label for="cost-filter" class="visually-hidden"></label>
+                   <li class="filter-option"><input type="range" min="0" max="4000" name="cost" id="cost-filter"></li>
+                   <li class="filter-option"><button type="submit" class="submit-btn">Показать</button></li>
+
+                   </ul>
+               </fieldset>
+           </form>
+           <div class="sort-box">
+            <p><span class="filter-result">Найдено: 3</span></p>
+            <div class="sort">
+                <p>Сортировка: </p>
+                <ul>
+                    <li><button type="button" class="sort-btn current-sort">По цене</button></li>
+                    <li><button type="button" class="sort-btn">По типу</button></li>
+                    <li><button type="button" class="sort-btn">По рейтингу</button></li>
+                </ul>    
+            </div>
+            <button><img src="img/icon-up-dir.svg" alt="Сортировка по возрастанию"></button>    
+            <button><img src="img/icon-down-dir.svg" alt="Сортировка по убыванию"></button>    
+           </div>
         </section>
+
         <section class="hotels">
             <ul class="hotels-list">
                 <li class="hotels-item">
