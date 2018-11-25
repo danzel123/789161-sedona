@@ -18,6 +18,7 @@
   </header>
   <main class="container">
     <section class="promo">
+      <h2 class="hidden-text">Промо-блок</h2>
       <!-- <img src="img/intro-bg.jpg" alt="Вид Седоны" width="1200" height="800">
       <img src="img/intro-welcome.svg" alt="Добро пожаловать!" width="459" height="353">
       <img src="img/intro-mask.svg"  width="459" height="353"> -->
@@ -55,91 +56,91 @@
         </ul>
       </div>
       <div class="advantages-row-3">
-         <div class="adventage-item-photo">
-          <img src="img/advantages-2.jpg" alt="Фото Седоны" width="800" height="401">
-        </div>
-        <div class="adventages-item">
-          <h3 class="adventages-item-tittle">Там есть<br> мост дьявола</h3>
-          <p><span>— №2 —</span>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>  
-        </div>
+       <div class="adventage-item-photo">
+        <img src="img/advantages-2.jpg" alt="Фото Седоны" width="800" height="401">
       </div>
-      <div class="advantages-row-4">
-        <ul class="advantages-list">
-          <li class="adventages-item">
-            <!-- какое то img-->
-            <h3 class="adventages-item-tittle">Небольшая площадь</h3>
-            <p><span>— №3 —</span>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="adventages-item">
-            <!-- какое то img-->
-            <h3 class="adventages-item-tittle">Красивая дорога</h3>
-            <p><span>— №4 —</span>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="adventages-item">
-            <!-- какое то img-->
-            <h3 class="adventages-item-tittle">Мало туристов</h3>
-            <p><span>— №3 —</span>Большинство едет в гранд каньон и толпится там</p>
-          </li> 
-        </ul>
+      <div class="adventages-item">
+        <h3 class="adventages-item-tittle">Там есть<br> мост дьявола</h3>
+        <p><span>— №2 —</span>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>  
       </div>
-    </section>
-    <section class="user-search">
-      <b>Заинтересовались?</b>
-        <p>Укажите предпологаемые даты поездки,<br>
-        и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <h2 class="search-form-tittle">Поиск гостиницы в Cедоне</h2>
-        <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Форма поиска гостиницы в Седоне</legend>
+    </div>
+    <div class="advantages-row-4">
+      <ul class="advantages-list">
+        <li class="adventages-item">
+          <!-- какое то img-->
+          <h3 class="adventages-item-tittle">Небольшая площадь</h3>
+          <p><span>— №3 —</span>Все достопримечательности находятся очень близко</p>
+        </li>
+        <li class="adventages-item">
+          <!-- какое то img-->
+          <h3 class="adventages-item-tittle">Красивая дорога</h3>
+          <p><span>— №4 —</span>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
+        <li class="adventages-item">
+          <!-- какое то img-->
+          <h3 class="adventages-item-tittle">Мало туристов</h3>
+          <p><span>— №3 —</span>Большинство едет в гранд каньон и толпится там</p>
+        </li> 
+      </ul>
+    </div>
+  </section>
+  <section class="user-search">
+    <b>Заинтересовались?</b>
+    <p>Укажите предпологаемые даты поездки,<br>
+    и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    <button type="button" class="search-hotel-btn"><h2 class="search-form-tittle">Поиск гостиницы в Cедоне</h2></button>
+    <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset>
+        <legend>Форма поиска гостиницы в Седоне</legend>
             <!-- по макету не понятно, что делает нажатие на <Поиск гостиницы в Cедоне>, если 
             показывает форму, то legend получается лишний. Если форма открыта полностью сразу, то получается, что
             клик на эту ссылку ведёт на страницу с гостиницами.-->
-            <!-- И ещё не могу понять, что по сути долна показывать карта. Сначала думал, про расположение отелей, но скорее всего
-            просто показывает, где находится Седона, да? -->
-            <ul>
-              <li class="arrival-date">
-                <label for="arrival-date">Дата заезда:</label>
-                <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2018">
-                <button type="button" class="calendar"><img src="img/calendar.svg" alt="Выбор даты заезда"></button>
-              </li>
-              <li class="departure-date">
-                <label for="departure-date">Дата выезда:</label>
-                <input type="text" name="departure-date" id="departure-date" value="4 июля 2018">
-                <button type="button" class="btn-calendar"><img src="img/calendar.svg" alt="Выбор даты выезда"></button>
-              </li>
-              <li class="adults half-width">
-                <label for="adults">Взрослые:</label>
-                <button type="button" class="btn-minus">-</button>
-                <input type="number" name="adults" id="adults" value="2">
-                <button type="button" class="btn-plus">+</button>
-              </li>
-              <li class="form-item">
-                <label for="kids">Дети:</label>
-                <button type="button" class="btn-minus">-</button>
-                <input type="number" name="kids" id="kids" value="0">
-                <button type="button" class="btn-plus">+</button>
-              </li>
-              <li class="form-item">
-                <button type="submit">Найти</button>
-              </li>
-            </ul>
-          </fieldset>
-        </form>
-      </section>
-    </main>
-    <footer class="main">
-      <p class="hashtag">#visitsedona</p>
-      <ul class="socials">
-        <li class="social-link"><a href="https://twitter.com">twitter</a></li>
-        <li class="social-link"><a href="https://facebook.com">facebook</a></li>
-        <li class="social-link"><a href="https://youtube.com">youtube</a></li>
-      </ul>
-      <p class="watermark">
-        Website by
-        <a href="https://htmlacademy.ru/intensive  /htmlcss" target="_blank">
-          <img src="img/logo-htmlacademy.svg" alt="Логотип html academy" width="115" height="41">
-        </a>
-      </p>  
-    </footer>
-  </body>
-  </html>
+            <!-- И ещё не могу понять, что по сути должа показывать карта. Сначала думал про расположение отелей, но скорее она
+              просто показывает, где находится Седона, да? -->
+              <ul>
+                <li>
+                  <label for="arrival-date">Дата заезда:</label>
+                  <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2018">
+                  <button type="button" class="btn-calendar"><img src="img/calendar.svg" alt="Выбор даты заезда"></button>
+                </li>
+                <li>
+                  <label for="departure-date">Дата выезда:</label>
+                  <input type="text" name="departure-date" id="departure-date" value="4 июля 2018">
+                  <button type="button" class="btn-calendar"><img src="img/calendar.svg" alt="Выбор даты выезда"></button>
+                </li>
+                <li class="half-width">
+                  <label for="adults">Взрослые:</label>
+                  <button type="button" class="btn-minus">-</button>
+                  <input type="number" name="adults" id="adults" value="2">
+                  <button type="button" class="btn-plus">+</button>
+                </li>
+                <li class="half-width">
+                  <label for="kids">Дети:</label>
+                  <button type="button" class="btn-minus">-</button>
+                  <input type="number" name="kids" id="kids" value="0">
+                  <button type="button" class="btn-plus">+</button>
+                </li>
+                <li>
+                  <button type="submit" class="search-btn">Найти</button>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+        </section>
+      </main>
+      <footer class="main">
+        <p class="hashtag">#visitsedona</p>
+        <ul class="socials">
+          <li class="social-link"><a href="https://twitter.com">twitter</a></li>
+          <li class="social-link"><a href="https://facebook.com">facebook</a></li>
+          <li class="social-link"><a href="https://youtube.com">youtube</a></li>
+        </ul>
+        <p class="watermark">
+          Website by
+          <a href="https://htmlacademy.ru/intensive  /htmlcss" target="_blank">
+            <img src="img/logo-htmlacademy.svg" alt="Логотип html academy" width="115" height="41">
+          </a>
+        </p>  
+      </footer>
+    </body>
+    </html>
