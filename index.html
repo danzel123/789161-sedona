@@ -18,13 +18,13 @@
   </header>
   <main class="container">
     <section class="promo">
-      <h2 class="hidden-text">Промо-блок</h2>
+      <h2 class="visually-hidden">Промо-блок</h2>
       <!-- <img src="img/intro-bg.jpg" alt="Вид Седоны" width="1200" height="800">
       <img src="img/intro-welcome.svg" alt="Добро пожаловать!" width="459" height="353">
       <img src="img/intro-mask.svg"  width="459" height="353"> -->
     </section>
     <section class="advantages">
-      <h2 class="hidden-text">Преимущества Седоны</h2>
+      <h2 class="visually-hidden">Преимущества Седоны</h2>
       <b>Седона-небольшой городок в Аризоне, заслуживающий большего</b>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       <div class="advantages-row-1">
@@ -88,15 +88,10 @@
     <b>Заинтересовались?</b>
     <p>Укажите предпологаемые даты поездки,<br>
     и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    <button type="button" class="search-hotel-btn"><h2 class="search-form-tittle">Поиск гостиницы в Cедоне</h2></button>
+    <button type="button" class="search-hotel-btn">Поиск гостиницы в Cедоне</button>
     <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
         <legend>Форма поиска гостиницы в Седоне</legend>
-            <!-- по макету не понятно, что делает нажатие на <Поиск гостиницы в Cедоне>, если 
-            показывает форму, то legend получается лишний. Если форма открыта полностью сразу, то получается, что
-            клик на эту ссылку ведёт на страницу с гостиницами.-->
-            <!-- И ещё не могу понять, что по сути должа показывать карта. Сначала думал про расположение отелей, но скорее она
-              просто показывает, где находится Седона, да? -->
               <ul>
                 <li>
                   <label for="arrival-date">Дата заезда:</label>
@@ -120,10 +115,8 @@
                   <input type="number" name="kids" id="kids" value="0">
                   <button type="button" class="btn-plus">+</button>
                 </li>
-                <li>
-                  <button type="submit" class="search-btn">Найти</button>
-                </li>
               </ul>
+                  <button type="submit" class="search-btn">Найти</button>
             </fieldset>
           </form>
         </section>
