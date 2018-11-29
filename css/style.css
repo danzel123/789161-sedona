@@ -1,0 +1,237 @@
+body{
+  margin: 0;
+
+  font-family: "PT Sans", Arrial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+
+}
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul{
+  list-style: none
+}
+
+.btn{
+  font: inherit;
+  background-color: #81b3d2;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.main-navigation{
+  background-color: white;
+}
+
+.main-navigation a{
+  font-weight: 700;
+  color: black;
+
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus{
+  color: #81b3d2;
+}
+
+/* По моему тут прозрачный черный */
+.main-navigation a:active{
+  color: #b2b2b2;
+}
+
+.container{
+  width: 1200px;
+  margin: 0 40px;
+  background-color: white; 
+}
+
+.promo-welcome{ 
+  background: url("../img/welcome.jpg");
+  width: 1200px;
+  height: 508px;
+}
+
+.adventages{
+  text-align: center;
+}
+
+.adventages-item h3{
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.adventages b{
+  font-size: 21px;
+  font-weight: 700;  
+}
+
+.adventages p{
+ color: #333333;
+}
+
+
+.user-search b{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #000000;
+}
+
+.user-search p{
+  color: #333333;
+  text-align: center;
+}
+
+.user-search input{
+  margin-bottom: 30px;
+  font: inherit;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.search-hotel-btn{
+  font-size: 21px;
+  line-height: 26px;
+  background-color: #766357;
+}
+
+.user-search .search-btn{
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hashtag{
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+
+}
+
+.socials .social-link{
+  background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
+}
+
+.watermark{
+  color: black;
+
+}
+
+.inner{
+  font-family: "PT Sans", Arrial, sans-serif; 
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+
+
+}
+
+.main-navigation .current{
+  color:#766357;
+}
+
+fieldset{
+  border: none;
+}
+
+.filter-form {
+  color: white;
+  background-color: #5182aa;
+
+}
+
+.filter-form legend{
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.filter-form .submit-btn{ 
+  background-color: unset;
+  border: solid 2px white;
+}
+
+.sort-box .filter-result{
+  font-size: 21px;
+  line-height: 26px;
+  color: black;
+}
+
+.sort-box .sort p{
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-link{
+  color: #b1b1b1;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: underline;
+  text-decoration-style: dotted; 
+}
+
+.current-sort{
+  text-decoration: none;
+  color: #81b3d2;
+
+}
+
+.hotels-item .hotel-tittle{
+  font-size: 21px;
+  line-height: 26px;
+  color: black;
+}
+
+.hotels-item p{ 
+  color: #696969;
+
+}
+
+.hotels-btn{
+  
+}
+
+.more-btn{
+  color: white;
+  background-color: #81b3d2;
+
+}
+
+.reserve-btn{
+  color: white;
+  background-color: #766357;
+}
+
+.rating-value{
+  display: inline-block;
+  color: #666666;
+  background-color: #f2f2f2;
+}
+
+
+
+
+
+

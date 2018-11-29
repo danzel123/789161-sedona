@@ -4,6 +4,9 @@
 <head>
    <meta charset="utf-8">
    <title>Седона-отели</title>
+   <link hrqef="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <header class="main-header">
     <nav class="main-navigation">
@@ -11,12 +14,12 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li><a href="hotels.html" class="current">Гостиницы</a></li>
       </ul>
       <div class="logo"><a href="index.html"><img src="img/logo-sedona.svg" alt="Герб Седоны" width="140" height="72"></a></div>
   </nav>
 </header>
-<body>
+<body class="inner">
     <main class="container">
         <section class="filter-form">
             <h2 class="visually-hidden">Фильтр гостиниц</h2>
@@ -61,7 +64,7 @@
              <!-- 2 прямоугольника с ценовым диапазоном. Пока что не понимаю, как их сделать -->
              <label for="cost-filter" class="visually-hidden"></label>
              <li class="filter-option"><input type="range" min="0" max="4000" name="cost" id="cost-filter"></li>
-             <li class="filter-option"><button type="submit" class="submit-btn">Показать</button></li>
+             <li class="filter-option"><button type="submit" class="btn submit-btn">Показать</button></li>
 
          </ul>
      </fieldset>
@@ -71,7 +74,7 @@
 <section class="hotels">
     <h2 class="visually-hidden">Список гостиниц</h2>
     <div class="sort-box">
-        <p><span class="filter-result">Найдено: 3</span></p>
+        <p class="filter-result">Найдено: 3</p>
         <div class="sort">
             <p>Сортировка: </p>
             <ul>
@@ -91,11 +94,11 @@
             </div>
             <div class="left-col">
                 <p>Гостиница</p>
-                <a href="#" class="btn hotels-btn more">Подробнее</a>
+                <a href="#" class="btn hotels-btn more-btn">Подробнее</a>
             </div>
             <div class="right-col">
                 <p>от 4000 р.</p>
-                <a href="#" class="btn hotels-btn reserve">Забронировать</a>
+                <a href="#" class="btn hotels-btn reserve-btn">Забронировать</a>
             </div>
             <div class="rating">
                 <ul class="stars-row">
@@ -114,11 +117,11 @@
             </div>
             <div class="left-col">
                 <p>Мотель</p>
-                <a href="#" class="btn hotels-btn more">Подробнее</a>
+                <a href="#" class="btn hotels-btn more-btn">Подробнее</a>
             </div>
             <div class="right-col">
                 <p>от 3000 р.</p>
-                <a href="#" class="btn hotels-btn reserve">Забронировать</a>
+                <a href="#" class="btn hotels-btn reserve-btn">Забронировать</a>
             </div>
             <div class="rating">
                 <ul class="stars-row">
@@ -137,11 +140,11 @@
             </div>
             <div class="left-col">
                 <p>Апартаменты</p>
-                <a href="#" class="btn hotels-btn more">Подробнее</a>
+                <a href="#" class="btn hotels-btn more-btn">Подробнее</a>
             </div>
             <div class="right-col">
                 <p>от 2000 р.</p>
-                <a href="#" class="btn hotels-btn reserve">Забронировать</a>
+                <a href="#" class="btn hotels-btn reserve-btn">Забронировать</a>
             </div>
             <div class="rating">
                 <ul class="stars-row">
