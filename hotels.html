@@ -9,15 +9,21 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <header class="main-header">
+    <div class="container">
     <nav class="main-navigation">
         <ul class="navigation-list">
+            <div class="left-block-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
+          </div>
+          <div class="right-block-navigation">
           <li><a href="#">Карта штата</a></li>
           <li><a href="hotels.html" class="current">Гостиницы</a></li>
+        </div>
       </ul>
       <div class="logo"><a href="index.html"><img src="img/logo-sedona.svg" alt="Герб Седоны" width="140" height="72"></a></div>
   </nav>
+  </div>
 </header>
 <body class="inner">
     <main class="container">
@@ -53,7 +59,7 @@
                     <label for="filter-motel">Мотель</label>
                 </li>
                 <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name=appartments" id="filter-appartments" checked>
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="appartments" id="filter-appartments" checked>
                     <label for="filter-appartments">Аппартаменты</label>
                 </li>
             </ul>   
@@ -76,15 +82,17 @@
     <div class="sort-box">
         <p class="filter-result">Найдено: 3</p>
         <div class="sort">
-            <p>Сортировка: </p>
+            <p>Сортировка:</p>
             <ul>
                 <li><a href="#" class="sort-link current-sort">По цене</a></li>
                 <li><a href="#" class="sort-link ">По типу</a></li>
                 <li><a href="#" class="sort-link ">по рейтингу</a></li>
             </ul>    
         </div>
+        <div class="sort-icons">
         <a href="#" class="sort-icon-up"><img src="img/icon-up-dir.svg" alt="Сортировка по возрастанию"></a>    
-         <a href="#" class="sort-icon-down"><img src="img/icon-down-dir.svg" alt="Сортировка по убыванию"></a>   
+        <a href="#" class="sort-icon-down"><img src="img/icon-down-dir.svg" alt="Сортировка по убыванию"></a>   
+    </div>
     </div>
     <ul class="hotels-list">
         <li class="hotels-item">
@@ -157,20 +165,22 @@
     </ul>
 </section>
 </main>
-<footer class="main">
-    <p class="hashtag">#visitsedona</p>
-    <ul class="socials">
-      <li class="social-link"><a href="https://twitter.com">twitter</a></li>
-      <li class="social-link"><a href="https://facebook.com">facebook</a></li>
-      <li class="social-link"><a href="https://youtube.com">youtube</a></li>
-  </ul>
-  <p class="watermark">
-    Website by
-    <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-        <img src="img/logo-htmlacademy.svg" alt="Логотип html academy" width="115" height="41">
-    </a>
-</p>  
-</footer>
+<div class="container">
+        <footer class="main-footer">
+          <p class="hashtag">#visitsedona</p>
+          <ul class="socials">
+            <li class="social-link"><a href="https://twitter.com">twitter</a></li>
+            <li class="social-link"><a href="https://facebook.com">facebook</a></li>
+            <li class="social-link"><a href="https://youtube.com">youtube</a></li>
+          </ul>
+          <p class="watermark">
+            Website by
+            <a href="https://htmlacademy.ru/intensive  /htmlcss" target="_blank">
+              <img src="img/logo-htmlacademy.svg" alt="Логотип html academy" width="115" height="41">
+            </a>
+          </p>  
+        </footer>
+        </div>
 </body>
 
 </html>
