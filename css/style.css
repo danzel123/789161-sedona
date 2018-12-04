@@ -1,3 +1,5 @@
+
+
 body{
   margin: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -40,7 +42,7 @@ ul{
   background-color: #ffffff;
 }
 
-.main-navigation{
+.page-navigation{
   padding: 0;
   margin: 0; 
 
@@ -74,18 +76,19 @@ ul{
 
 .logo{
   position: absolute;
-  left: 600px;
+  left: 50%;
+  margin-left: -70px;
   top: 0px;
 }
 
-.main-navigation a{
+.page-navigation a{
   font-weight: 700;
   color: #000000;
 }
-.main-navigation a:hover, .main-navigation a:focus{
+.page-navigation a:hover, .page-navigation a:focus{
   color: #81b3d2;
 }
-.main-navigation a:active{
+.page-navigation a:active{
   color: #000000;
   opacity: 0.3;
 }
@@ -106,6 +109,11 @@ ul{
   align-items: center;
 }
 
+.advantages ul{
+  padding: 0;
+  margin: 0;
+}
+
 .advantages b{
   font-size: 21px;
   font-weight: 700;
@@ -113,6 +121,10 @@ ul{
 }
 .advantages p{
   color: #333333;
+}
+
+.advantage-item-photo img{
+  display: block;
 }
 
 .advantages-row{
@@ -143,6 +155,12 @@ text-align: center;
 .advantages-item{
   width: 280px;
   padding: 55px 60px;
+}
+
+/* Костыль, потому что не могу понять, почему вылезает снизу кусок */
+
+.advantages-row-3 .advantages-item{
+  padding-bottom: 51px; 
 }
 
 .advantages-item h3{
@@ -197,7 +215,7 @@ text-align: center;
   padding: 18px 196px 19px;
 }
 
-.main-footer{
+.page-footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -239,11 +257,15 @@ body .inner{
   color: #333333;
   background-color: #f2f2f2;
 }
+
+
 .main-navigation .current{
   color:#766357;
 }
 fieldset{
   border: none;
+  padding: 0;
+  margin: 0;
 }
 .filter-form {
   color: #ffffff;
@@ -258,6 +280,13 @@ fieldset{
   border: solid 2px #ffffff;
 }
 
+.filter-form,
+.hotels{
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+
 .sort-box{
   display: flex;
   justify-content: space-between;
@@ -265,16 +294,21 @@ fieldset{
 }
 .filter-result{
   margin-right: 49px;
-  margin-left: 73px;
 }
 
 .sort{
   margin: 0;
   padding: 0;
   display: flex;
-  margin-right: 504px;
+  margin-right: 400px;
   justify-content: space-between;
   align-items: center
+}
+
+.sort p{
+  display:block;
+  margin-right: 40px;
+  text-align: left;
 }
 
 .sort ul{
@@ -284,6 +318,14 @@ fieldset{
   justify-content: space-between;
   align-items: center;
 
+}
+
+.sort li{
+  margin-right: 33px;  
+}
+
+.sort li:last-child{
+  margin-right: 0;
 }
 
 .sort-box .filter-result{
@@ -313,6 +355,54 @@ fieldset{
   text-decoration: none;
   color: black;
 }
+
+.sort-icons{
+  display: flex;
+  
+}
+
+.sort-icons a:first-child{
+  margin-right: 12px;
+}
+
+.hotels-item{
+  justify-content: flex-start;
+  display: flex;
+  padding: 30px 0 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotels-item h3{
+  padding: 0;
+  margin: 0;
+}
+
+/* Тут во второмблоке кнопка наезжала, тоже костыль */
+.hotel-tittle{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.hotels-item-info{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  width: 350px;
+}
+
+.hotels-item .hotel-photo{
+  margin-right: 32px;
+}
+
+.hotels-item .left-col{
+  margin-right: 6px;
+}
+
+.hotels ul{
+  padding: 0;
+  margin: 0;
+}
 .hotels-item .hotel-tittle{
   font-size: 21px;
   line-height: 26px;
@@ -321,6 +411,25 @@ fieldset{
 .hotels-item p{
   color: #333333;
 }
+
+.rating{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  justify-content: space-between;
+}
+
+.stars-row{
+  display: flex;
+}
+
+.rating-value{
+  align-content: flex-start
+}
+
+
 .more-btn{
   color: #ffffff;
   background-color: #81b3d2;
@@ -329,6 +438,12 @@ fieldset{
   color: #ffffff;
   background-color: #766357;
 }
+
+.more-btn,
+.reserve-btn{
+  padding: 6px 17px
+}
+
 .rating-value{
   display: inline-block;
   color: #666666;

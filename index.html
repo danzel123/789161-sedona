@@ -8,8 +8,8 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="main-header">
     <div class="container">
+  <header class="page-header">
     <nav class="main-navigation">
       <ul class="navigation-list">
         <div class="left-block-navigation">
@@ -23,9 +23,8 @@
       </ul>
       <div class="logo"><img src="img/logo-sedona.svg" alt="Герб Седоны" width="140" height="72"></div>
     </nav>
-  </div>
   </header>
-  <main class="container">
+  <main class="page-content">
     <section class="promo">
       <h2 class="visually-hidden">Промо-блок</h2>
       <div class="promo-welcome">
@@ -98,12 +97,12 @@
     и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     <button type="button" class="btn search-hotel-btn">Поиск гостиницы в Cедоне</button>
     <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
-                <p>
+                <p class="full-width">
                   <label for="arrival-date">Дата заезда:</label>
                   <input typpe="text" name="arrival-date" id="arrival-date" value="24 апреля 2018">
                   <button type="button" class="btn btn-calendar"><img src="img/calendar.svg" alt="Выбор даты заезда"></button>
                 </p>
-                <p>
+                <p class="full-width">
                   <label for="departure-date">Дата выезда:</label>
                   <input type="text" name="departure-date" id="departure-date" value="4 июля 2018">
                   <button type="button" class="btn btn-calendar"><img src="img/calendar.svg" alt="Выбор даты выезда"></button>
@@ -124,8 +123,7 @@
           </form>
         </section>
       </main>
-      <div class="container">
-      <footer class="main-footer">
+      <footer class="page-footer">
         <p class="hashtag">#visitsedona</p>
         <ul class="socials">
           <li class="social-link"><a href="https://twitter.com">twitter</a></li>
