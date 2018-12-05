@@ -64,14 +64,9 @@ ul{
   text-align: center;
 }
 
-.left-block-navigation{
-  display: flex;
-  justify-content: space-between;
-}
-
-.right-block-navigation{
-  display: flex;
-  justify-content: space-between;
+.navigation-list li:nth-of-type(3){
+  margin-left: auto;
+  color: #000000;
 }
 
 .logo{
@@ -131,20 +126,20 @@ ul{
   display: flex;
 }
 
-.advantages-row-1 p,
-.advantages-row-3 p{
+.advantages-row:nth-of-type(1) p,
+.advantages-row:nth-of-type(3) p{
   color: #f2f2f2;
 }
 
-.advantages-row-1 .advantages-item,
-.advantages-row-3 .advantages-item{
+.advantages-row:nth-of-type(1),
+.advantages-row:nth-of-type(3){
   background-color: #81b3d2;
   color: #f2f2f2;
 }
 
 
-.advantages-row-1 .advantages-item span,
-.advantages-row-3 .advantages-item span{
+.advantages-row:nth-of-type(1) .advantages-item span,
+.advantages-row:nth-of-type(3) .advantages-item span{
 text-align: center;
 }
 
@@ -159,7 +154,7 @@ text-align: center;
 
 /* Костыль, потому что не могу понять, почему вылезает снизу кусок */
 
-.advantages-row-3 .advantages-item{
+.advantages-row:nth-of-type(3) .advantages-item{
   padding-bottom: 51px; 
 }
 
@@ -246,7 +241,7 @@ text-align: center;
   width: 46px;
   height: 48px;
 }
-.watermark{
+.copyright{
   color: #000000;
   margin-right: 101px;
 }
@@ -262,18 +257,22 @@ body .inner{
   color:#766357;
 }
 
-.filter-form form{
+.filter-form{
   display: flex;
   padding-top: 30px;
   padding-bottom: 32px;
 }
 
-.filter-form form fieldset:first-child{
+.filter-form fieldset:first-child{
   margin-right: 115px;  
 }
 
-.filter-form form fieldset:last-child{
+.filter-form fieldset:last-child{
   margin-left: auto; 
+}
+
+.filter-wi-fi{
+  text-transform: uppercase;
 }
 
 fieldset{
@@ -300,59 +299,48 @@ fieldset{
   padding-right: 72px;
 }
 
+.hotels ul{
+  margin: 0;
+  padding: 0;
 
-.sort-box{
+}
+.user-sort{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   border-bottom: 1px solid #e5e5e5; 
-
+  align-items: center;
 }
 .filter-result{
   margin-right: 49px;
 }
 
-.sort{
-  margin: 0;
-  padding: 0;
-  display: flex;
-  margin-right: 400px;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.sort p{
-  display:block;
-  margin-right: 40px;
-  text-align: left;
-}
-
-.sort ul{
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-}
-
-.sort li{
+.sort-links li{
   margin-right: 33px;  
 }
 
-.sort li:last-child{
+.sort-links li:last-child{
   margin-right: 0;
 }
 
-.sort-box .filter-result{
+.sort-links li:first-child{
+  margin-left: 40px;
+}
+
+.user-sort .filter-result{
   font-size: 21px;
   line-height: 26px;
   color: #000000;
 }
-.sort-box .sort p{
+.user-sort  p{
   font-size: 12px;
   line-height: 18px;
+
 }
-.sort-link{
+.hotels .sort-links{
+  display: flex;
+  align-content: center;
+  margin-right: auto;
   color: #000000;
   font-size: 12px;
   line-height: 18px;
@@ -361,28 +349,28 @@ fieldset{
   opacity: 0.3;
   text-decoration-color: #81b3d2;
 }
-.sort .current-sort{
+.sort-links .current-sort{
   text-decoration: none;
   color: #81b3d2;
   opacity: 1;
   pointer-events: none;
   cursor: default;
   text-decoration: none;
-  color: black;
 }
 
-.sort-icons{
+.sort-arrows{
   display: flex;
   align-self: center;
 }
 
-.sort-icons a:first-child{
+.sort-arrows li:first-child{
   margin-right: 12px;
 }
 
 .hotels-item{
   justify-content: flex-start;
   display: flex;
+  align-content: flex-start;
   padding: 30px 0 30px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -392,7 +380,6 @@ fieldset{
   margin: 0;
 }
 
-/* Тут во второмблоке кнопка наезжала, тоже костыль */
 .hotel-tittle{
   padding: 0;
   margin: 0;
@@ -410,14 +397,17 @@ fieldset{
   margin-right: 32px;
 }
 
+.hotels-item .left-col,
+.hotels-item .right-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+}
+
 .hotels-item .left-col{
   margin-right: 6px;
 }
 
-.hotels ul{
-  padding: 0;
-  margin: 0;
-}
 .hotels-item .hotel-tittle{
   font-size: 21px;
   line-height: 26px;
@@ -425,6 +415,7 @@ fieldset{
 }
 .hotels-item p{
   color: #333333;
+  margin: 0;
 }
 
 .rating{
@@ -433,17 +424,20 @@ fieldset{
   display: flex;
   flex-direction: column;
   margin-left: auto;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .stars-row{
   display: flex;
+  justify-content: flex-end;
+  margin-bottom: 47px;
 }
 
-.rating-value{
-  align-content: flex-start
+.rating-star{
+  background-image: url("../img/star.svg");
+  width: 18px;
+  height: 18px;
 }
-
 
 .more-btn{
   color: #ffffff;
@@ -459,10 +453,12 @@ fieldset{
   padding: 6px 17px
 }
 
-.rating-value{
+.rating .rating-value{
   display: inline-block;
   color: #666666;
   background-color: #f2f2f2;
+  margin-top: 47px;
+  }
 }
 
 

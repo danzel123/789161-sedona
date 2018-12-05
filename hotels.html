@@ -13,22 +13,18 @@
 <header class="page-header">
     <nav class="page-navigation">
         <ul class="navigation-list">
-            <div class="left-block-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
-          </div>
-          <div class="right-block-navigation">
-          <li><a href="#">Карта штата</a></li>
+          <li class=""><a href="#">Карта штата</a></li>
           <li><a href="hotels.html" class="current">Гостиницы</a></li>
-        </div>
       </ul>
       <div class="logo"><a href="index.html"><img src="img/logo-sedona.svg" alt="Герб Седоны" width="140" height="72"></a></div>
   </nav>
 </header>
     <main class="page-content">
-        <section class="filter-form">
-            <h2 class="visually-hidden">Фильтр гостиниц</h2>
-         <form method="post">
+        <section class="user-filter-form">
+        <h2 class="visually-hidden">Фильтр гостиниц</h2>
+         <form method="POST" action="https://echo.htmlacademy.ru" class="filter-form">
              <fieldset>
                 <legend>Инфраструктура:</legend>
                 <ul>
@@ -42,7 +38,7 @@
                     </li>
                     <li class="filter-option">
                         <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi" >
-                        <label for="filter-wi-fi">WI-FI</label>
+                        <label for="filter-wi-fi">wi-fi</label>
                     </li>
                 </ul>   
             </fieldset>
@@ -78,20 +74,18 @@
 
 <section class="hotels">
     <h2 class="visually-hidden">Список гостиниц</h2>
-    <div class="sort-box">
-        <p class="filter-result">Найдено: 3</p>
-        <div class="sort">
-            <p>Сортировка:</p>
-            <ul>
-                <li><a href="#" class="sort-link current-sort">По цене</a></li>
-                <li><a href="#" class="sort-link ">По типу</a></li>
-                <li><a href="#" class="sort-link ">по рейтингу</a></li>
-            </ul>    
-        </div>
-        <div class="sort-icons">
-        <a href="#" class="sort-icon-up"><img src="img/icon-up-dir.svg" alt="Сортировка по возрастанию"></a>    
-        <a href="#" class="sort-icon-down"><img src="img/icon-down-dir.svg" alt="Сортировка по убыванию"></a>   
-    </div>
+    <div class="user-sort">
+        <p class="filter-result">Найдено: <output>3</output></p>
+        <p>Сортировка:</p>
+        <ul class="sort-links">
+            <li><a href="#" rel="nofollow" class="sort-link current-sort">По цене</a></li>
+            <li><a href="#" rel="nofollow" class="sort-link ">По типу</a></li>
+            <li><a href="#" rel="nofollow" class="sort-link ">по рейтингу</a></li>
+        </ul>    
+        <ul class="sort-arrows">
+            <li><a href="#" class="arrow up"><img src="img/icon-up-dir.svg" alt="Сортировка по возрастанию"></a></li>    
+            <li><a href="#" class="arrow down"><img src="img/icon-down-dir.svg" alt="Сортировка по убыванию"></a></li>   
+        </ul>
     </div>
     <ul class="hotels-list">
         <li class="hotels-item">
@@ -111,10 +105,10 @@
         </div>
             <div class="rating">
                 <ul class="stars-row">
-                    <li><img src="img/star.svg" alt="1 звезда" class="rating-star" width="18" height="18"></li>
-                    <li><img src="img/star.svg" alt="1 звезда" class="rating-star" width="18" height="18"></li>
-                    <li><img src="img/star.svg" alt="1 звезда" class="rating-star" width="18" height="18"></li>
-                    <li><img src="img/star.svg" alt="1 звезда" class="rating-star" width="18" height="18"></li>
+                    <li class="rating-star"></li>
+                    <li class="rating-star"></li>
+                    <li class="rating-star"></li>
+                    <li class="rating-star"></li>
                 </ul>
                 <p class="rating-value">Рейтинг: 8,5</p>
             </div>
@@ -136,9 +130,9 @@
         </div>
             <div class="rating">
                 <ul class="stars-row">
-                    <li><img src="img/star.svg" alt="1 звезда" class="rating-star" width="18" height="18"></li>
-                    <li><img src="img/star.svg" alt="1 звезда" class="rating-star" width="18" height="18"></li>
-                    <li><img src="img/star.svg" alt="1 звезда" class="rating-star" width="18" height="18"></li>
+                   <li class="rating-star"></li>
+                   <li class="rating-star"></li>
+                   <li class="rating-star"></li>
                 </ul>
                 <p class="rating-value">Рейтинг: 8,9</p>
             </div>
@@ -160,8 +154,8 @@
         </div>
             <div class="rating">
                 <ul class="stars-row">
-                    <li><img src="img/star.svg" alt="1 звезда" class="rating-star" width="18" height="18"></li>
-                    <li><img src="img/star.svg" alt="1 звезда" class="rating-star" width="18" height="18"></li>
+                    <li class="rating-star"></li>
+                    <li class="rating-star"></li>
                 </ul>
                 <p class="rating-value">Рейтинг: 9,2</p>
             </div>
@@ -169,20 +163,20 @@
     </ul>
 </section>
 </main>
-        <footer class="page-footer">
-          <p class="hashtag">#visitsedona</p>
-          <ul class="socials">
-            <li class="social-link"><a href="https://twitter.com">twitter</a></li>
-            <li class="social-link"><a href="https://facebook.com">facebook</a></li>
-            <li class="social-link"><a href="https://youtube.com">youtube</a></li>
-          </ul>
-          <p class="watermark">
-            Website by
-            <a href="https://htmlacademy.ru/intensive  /htmlcss" target="_blank">
-              <img src="img/logo-htmlacademy.svg" alt="Логотип html academy" width="115" height="41">
-            </a>
-          </p>  
-        </footer>
+<footer class="page-footer">
+        <p class="hashtag">#visitsedona</p>
+        <ul class="socials">
+          <li class="social-link tw"><a href="https://twitter.com">twitter</a></li>
+          <li class="social-link fb"><a href="https://facebook.com">facebook</a></li>
+          <li class="social-link yt"><a href="https://youtube.com">youtube</a></li>
+        </ul>
+        <p class="copyright ">
+          Website by
+          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+            <img src="img/logo-htmlacademy.svg" alt="Логотип html academy" width="115" height="41">
+          </a>
+        </p>  
+      </footer>
 </div>
 </body>
 
