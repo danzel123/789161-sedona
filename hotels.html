@@ -67,15 +67,20 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
-              <legend>Стоимость в сутки(Р):</legend>
-              <ul>
-                <!-- 2 прямоугольника с ценовым диапазоном. Пока что не понимаю, как их сделать -->
-                <label for="cost-filter" class="visually-hidden"></label>
-                <li class="filter-option"><input type="range" min="0" max="4000" name="cost" id="cost-filter"></li>
-                <li class="filter-option"><button type="submit" class="btn submit-btn">Показать</button></li>
-
-              </ul>
+            <fieldset class="cost-of-house">
+              <legend>Стоимость в сутки (Р):</legend>
+              <div class="price-controls">
+              <label lass="left-value">от
+              <input type="text" name="min" value="0"></label>
+              <label for="max" class="right-value">до
+              <input type="text" name="max" id="max" value="3000"></label>
+            </div>
+            <div class="scale">
+              <div class="bar"></div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+              <button type="submit" class="btn btn-submit">показать</button>
             </fieldset>
           </form>
         </section>

@@ -355,24 +355,38 @@ ul{
 }
 
 .map{
+  position: relative;
+  display: flex;
   margin-bottom: -120px;
 }
 
 .map img{
+  z-index: 1;
   display: block;
 }
 
+.map iframe{
+  position: absolute;
+  z-index: 2;
+}
+
 .search-form{
+  display: none;
+  z-index: 4;
   position: absolute;
   top: 243px;
   background-color: #ffffff;
   font-weight: 700;
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 55px;
   box-shadow: 0 0 15px rgba(0,0,0, 0.2);
   width: 460px;
+}
+
+.modal-show{
+  display: flex;
+  animation: bounce 0.6s;
 }
 
 .search-form p{
@@ -772,6 +786,109 @@ fieldset{
   background: url("../img/checkbox-on.svg") no-repeat;
 }
 
+.cost-of-house{
+  margin-top: 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cost-of-house legend{
+  margin-bottom: 10px;
+  line-height: 21px;  
+}
+.price-controls{
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  width: 318px;
+  border: 2px solid #ffffff;
+  margin-bottom: 20px;
+}
+
+.price-controls::after{
+  background-color: #ffffff;
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls input{
+  font:inherit;
+  color: #ffffff;
+  background: none;
+  border: none;
+  width: 50px;
+}
+
+.price-controls label{
+  display: inline-block;
+  width: 90px;
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls label:first-of-type{
+  margin-left: 65px;
+  margin-right: auto;  
+}
+
+.price-controls label:nth-of-type(2){
+  margin-right: 12px;  
+}
+
+.scale{
+  position: relative;
+  width: 318px;
+  height: 2px;
+  background-color: #7d797a;
+  margin-bottom: 32px; 
+}
+
+.bar{
+  width: 80%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.toggle{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+ background: url("../img/filter-button.svg") no-repeat;
+}
+
+.toggle-min{
+  left: 0;
+  top: -10px;
+}
+
+.toggle-max{
+  top: -10px;
+  right: 14%;
+}
+
+.btn-submit{
+  display: inline-block;
+  box-sizing: border-box;
+  background: none;
+  border: 2px solid #ffffff;
+  margin-left: 85px;
+  text-align: center;
+  min-width: 137px;
+  line-height: 21px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  
+
+}
+
 .user-sort{
   display: flex;
   justify-content: flex-start;
@@ -780,7 +897,7 @@ fieldset{
   padding-top: 18px;
   padding-left: 72px;
   padding-right: 72px;
-  padding-bottom: 29px;
+  padding-bottom: 27px;
 }
 
 .sort-links a{
@@ -808,7 +925,7 @@ fieldset{
    margin-right: 48px;
 }
 .user-sort  p{
-  margin-top: 12px;
+  margin-top: 10px;
   margin-bottom: 0;
   font-size: 12px;
   line-height: 18px;
@@ -1017,5 +1134,19 @@ fieldset{
   display: inline-block;
   color: #666666;
   background-color: #f2f2f2;
-  padding: 2px 13px;
+  padding: 1px 13px;
   }
+
+.inner .page-footer{
+  margin-top: 0;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-88px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
