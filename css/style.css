@@ -335,7 +335,7 @@ ul{
   border: none;
 }
 .search-hotel-btn{
-  font-weight: 700px;
+  font-weight: 700;
   width: 570px;
   font-size: 21px;
   line-height: 26px;
@@ -371,7 +371,7 @@ ul{
 }
 
 .search-form{
-  display: none;
+  display: flex;
   z-index: 4;
   position: absolute;
   top: 243px;
@@ -382,6 +382,10 @@ ul{
   padding: 55px;
   box-shadow: 0 0 15px rgba(0,0,0, 0.2);
   width: 460px;
+}
+
+.modal-close{
+  display: none;
 }
 
 .modal-show{
@@ -858,19 +862,24 @@ fieldset{
 }
 
 .toggle{
+  cursor: pointer;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 24px;
  background: url("../img/filter-button.svg") no-repeat;
+}
+
+.toggle:hover{
+  background: url("../img/filter-button-hover.svg") no-repeat;
 }
 
 .toggle-min{
   left: 0;
-  top: -10px;
+  top: -11px;
 }
 
 .toggle-max{
-  top: -10px;
+  top: -11px;
   right: 14%;
 }
 
