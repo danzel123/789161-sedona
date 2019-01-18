@@ -50,29 +50,25 @@ body {
 }
 .navigation-list {
   margin: 0;
-  padding-left: 0;
-  padding-right: 0;
+  display: flex;
   padding-left: 73px;
-  margin-right: 73px;
+  padding-right: 73px;
+  flex-wrap: wrap;
+}
+.navigation-list li {
+  flex-basis: 20%;
+}
+.firstn-nav {
+  margin-right: 30px;
+}
+.thirdn-nav {
+  margin-left: auto;
+  margin-right: 33px;
+}
+.navigation-list li:nth-child(1), .navigation-list li:nth-child(2) {}
+.navigation-list li:nth-child(3), .navigation-list li:nth-child(4) {
   text-align: right;
 }
-
-.navigation-list li {
-  display:  inline-block;
-  width: 240px;
-}
-
-
-
-
-.navigation-list li:nth-child(1), .navigation-list li:nth-child(2) {
-  align: left;  
-}
-
-.navigation-list li:nth-child(3), .navigation-list li:nth-child(4) {
-  text-align: right;  
-}
-
 /*.navigation-list .hotel-nav{
   width: 223px;
   margin-left: 17px;
@@ -540,9 +536,6 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   padding-left: 133px;
   padding-right: 98px;
 }
-
-
-
 .index-footer {
   position: relative;
   z-index: 2;
@@ -728,8 +721,6 @@ body .inner {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-
-
 .cost-of-house legend {
   padding-top: 2px;
   margin-bottom: 10px;
