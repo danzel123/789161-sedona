@@ -12,10 +12,14 @@
     <header class="page-header">
       <nav class="page-navigation">
         <ul class="navigation-list">
+          <div class="left-row-nav">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
+        </div>
+        <div class="right-row-nav">
           <li><a href="#">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li class="hotel-nav"><a href="hotels.html">Гостиницы</a></li>
+        </div>
         </ul>
         <div class="logo"><img src="img/logo-sedona.svg" alt="Герб Седоны" width="140" height="72"></div>
       </nav>
@@ -39,8 +43,7 @@
             <img src="img/advantages-1.jpg" alt="Фото Седоны" width="800" height="256">
           </div>
         </div>
-        <div class="advantages-row row-with-pic">
-          <ul>
+          <ul class="advantages-row row-with-pic">
             <li class="advantages-item">
               <!-- какое то img-->
               <h3>Жильё</h3>
@@ -57,7 +60,6 @@
               <p>Не только китайского, но и местного производства!</p>
             </li> 
           </ul>
-        </div>
         <div class="advantages-row blue-row">
          <div class="advantage-item-photo">
           <img src="img/advantages-2.jpg" alt="Фото Седоны" width="800" height="256">
@@ -67,8 +69,7 @@
           <p><span>— №2 —</span>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>  
         </div>
       </div>
-      <div class="advantages-row grey-row">
-        <ul>
+        <ul class="advantages-row grey-row">
           <li class="advantages-item">
             <!-- какое то img-->
             <h3>Небольшая площадь</h3>
@@ -79,14 +80,13 @@
             <h3>Красивая дорога</h3>
             <p><span>— №4 —</span>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
+
           <li class="advantages-item few-tourists">
             <!-- какое то img-->
             <h3>Мало туристов</h3>
             <p><span>— №5 —</span>Большинство едет в гранд каньон и толпится там</p>
           </li> 
-        </ul>
-      </div>
-    </section>
+        </ul>    </section>
     <section class="user-search">
       <b>Заинтересовались?</b>
       <p>Укажите предполагаемые даты поездки,<br>
@@ -138,20 +138,6 @@
       </a>
     </p>  
   </footer>
-<script>
-
-  var btn = document.querySelector(".search-hotel-btn");
-  var popup = document.querySelector(".search-form")
-  popup.classList.add("modal-close")
-
-  btn.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.toggle("modal-show")
-})
-  
-
-
-</script>
-</div>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
