@@ -335,6 +335,7 @@ body {
   display: block;
 }
 .map iframe {
+  left: 0px;
   position: absolute;
   z-index: 2;
 }
@@ -345,6 +346,7 @@ body {
   z-index: 4;
   position: absolute;
   top: 243px;
+  left: 315px;
   background-color: #ffffff;
   font-weight: 700;
   -ms-flex-wrap: wrap;
@@ -541,6 +543,9 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   padding-left: 133px;
   padding-right: 98px;
 }
+
+
+
 .index-footer {
   position: relative;
   z-index: 2;
@@ -726,7 +731,10 @@ body .inner {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
+
 .cost-of-house legend {
+  padding-top: 2px;
   margin-bottom: 10px;
   line-height: 21px;
 }
@@ -754,6 +762,7 @@ body .inner {
   transform: translate(-50%, -50%);
 }
 .price-controls input {
+  height: 19px;
   font: inherit;
   color: #ffffff;
   background: none;
@@ -761,6 +770,8 @@ body .inner {
   width: 50px;
 }
 .price-controls label {
+  margin-bottom: 1px;
+  margin-top: 1px;
   display: inline-block;
   vertical-align: center;
   width: 90px;
@@ -815,7 +826,7 @@ body .inner {
   border: 2px solid #ffffff;
   margin-left: 85px;
   text-align: center;
-  min-width: 137px;
+  width: 138px;
   line-height: 21px;
   padding-top: 6px;
   padding-bottom: 5px;
