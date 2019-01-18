@@ -50,36 +50,33 @@ body {
 }
 .navigation-list {
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   padding-left: 0;
   padding-right: 0;
+  padding-left: 73px;
+  margin-right: 73px;
+  text-align: right;
 }
 
 .navigation-list li {
+  display:  inline-block;
   width: 240px;
-  text-align: center;
 }
 
-.left-row-nav{
-  display: flex;
 
+
+
+.navigation-list li:nth-child(1), .navigation-list li:nth-child(2) {
+  align: left;  
 }
 
-.right-row-nav{
-  display: flex;
-  justify-content: flex-end;
+.navigation-list li:nth-child(3), .navigation-list li:nth-child(4) {
+  text-align: right;  
 }
 
-.navigation-list .hotel-nav{
+/*.navigation-list .hotel-nav{
   width: 223px;
   margin-left: 17px;
-}
+}*/
 
 .navigation-list a:not(.current):hover {
   color: #81b3d2;
