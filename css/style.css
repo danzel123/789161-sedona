@@ -28,7 +28,7 @@ body {
 }
 .btn {
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   font: inherit;
   background-color: #81b3d2;
   color: #ffffff;
@@ -761,7 +761,6 @@ body .inner {
   margin-bottom: 1px;
   margin-top: 1px;
   display: inline-block;
-  vertical-align: center;
   width: 90px;
   font-size: 14px;
   line-height: 30px;
@@ -807,7 +806,7 @@ body .inner {
 }
 .btn-submit {
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background: none;
@@ -1055,7 +1054,7 @@ body .inner {
 }
 .rating .rating-value {
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   color: #666666;
   background-color: #f2f2f2;
   padding: 1px 13px;
@@ -1082,4 +1081,30 @@ body .inner {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error{
+  animation: shake 0.6s;
 }
